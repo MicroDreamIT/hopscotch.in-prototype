@@ -1,0 +1,28 @@
+
+.topBar{
+  display: none;
+  justify-content: flex-end;
+  background: $primary;
+  font-size: 12px;
+  padding: 5px;
+  a{
+    color:#fff;
+  }
+  @media(min-width: 768px){
+    display: flex;
+  }
+}
+.nav-menu{
+  background: $primary;
+  color:$white;
+  .navbar-nav{
+    .nav-link{
+      &.navbar-link{
+        color:$cream;
+        &:hover{
+          color:$white;
+        }
+      }
+    }
+  }
+}
