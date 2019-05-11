@@ -193,9 +193,8 @@
                                     :autoWidth="true"
                             >
                                 <mdb-btn
-                                        color="pink"
                                         size="sm"
-                                        class="cust-btn"
+                                        class="filter-button"
                                         rounded
                                         @click="triggerFilter(name)"
                                         v-for="name in ages"

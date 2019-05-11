@@ -17,11 +17,20 @@
   color:$white;
   .navbar-nav{
     .nav-link{
-      &.navbar-link{
-        color:$cream;
-        &:hover{
-          color:$white;
+        &.navbar-link{
+          color:$cream;
+            &:hover{
+              color:$white;
+            }
         }
+    }
+  }
+  .navbar-text{
+    a{
+      color: $cream;
+      font-size: 13px;
+      &:hover{
+        color:$white;
       }
     }
   }

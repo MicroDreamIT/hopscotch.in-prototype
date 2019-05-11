@@ -1,13 +1,5 @@
 <template>
     <div>
-        <div class="topBar">
-               <div class="container">
-                   <div class="float-right">
-                       <a href="" class="pr-3"> Account</a>
-                       <a href=""> 24x7 Customer care </a>
-                   </div>
-               </div>
-        </div>
         <mdb-navbar expand="large" class="nav-menu">
             <mdb-container>
                 <mdb-navbar-brand href="#" class="nav-logo">
@@ -24,6 +16,10 @@
                             </div>
                         </mdb-nav-item>
                     </mdb-navbar-nav>
+                    <span class="navbar-text">
+                      <a href="" class="pr-3"> Account</a>
+                       <a href=""> 24x7 Customer care </a>
+                  </span>
                 </mdb-navbar-toggler>
             </mdb-container>
     

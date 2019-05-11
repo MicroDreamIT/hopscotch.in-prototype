@@ -110,12 +110,12 @@
 </script>
 
 <style scoped lang="scss">
+    @import "../../../layouts/scss/variables";
     .card {
 	    border: 0.5px solid #f5f5f5;
         box-shadow: none;
         background:white;
     }
-
     .bottom-text {
         padding: 12px 15px;
         z-index: 2;
@@ -134,9 +134,9 @@
 
     .addToCart {
         padding: 8px 0;
-        color: #eae5e5;
+        color: $white;
         text-align: center;
-        background: #ed54a4;
+        background:$primary;
         width: 100%;
         display: block;
         font-size: 13px;
@@ -164,7 +164,7 @@
         &:hover {
             border: 1px solid transparent;
             box-shadow: 0px 4px 15px #00000029;
-            color: #ED54AC;
+            color: $primary;
         }
         /*&.active{*/
             /*border: 1px solid transparent;*/
@@ -183,14 +183,12 @@
         justify-content: space-between;
         span {
             &:first-child {
-
-                color: black;
+                color: $primary;
                 font-size: 14px;
                 font-weight: bold;
             }
-
             &:last-child {
-                color: #ED54A4;
+                color: $primary;
                 font-size: 14px;
                 font-weight: bold;
             }
@@ -198,10 +196,10 @@
     }
 
     .cardHeader {
-        padding: 2px 0;
+        padding: 8px 0!important;
         font-size: 12px;
         text-align: center;
-        background: rgb(112, 112, 112);
+        background:  $Secondary;
         color: #fff;
     }
 

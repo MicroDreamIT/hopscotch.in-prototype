@@ -1,7 +1,7 @@
 <template>
     <!-- Footer -->
     <div>
-    <mdb-footer color="stylish-color-dark" class="font-small pt-4 mt-4" v-if="getShowStatus">
+    <mdb-footer class="font-small pt-4 mt-4 site-footer" v-if="getShowStatus">
         <mdb-container class="text-center text-md-left">
             <mdb-row class="text-center text-md-left mt-3 pb-3">
                 <mdb-col md="3" lg="3" xl="3" class="mx-auto mt-3">
@@ -12,18 +12,18 @@
                 <hr class="w-100 clearfix d-md-none" />
                 <mdb-col md="2" lg="2" xl="2" class="mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                    <p><a href="#!">MDBootstrap</a></p>
-                    <p><a href="#!">MDWordPress</a></p>
-                    <p><a href="#!">BrandFlow</a></p>
-                    <p><a href="#!">Bootstrap Angular</a></p>
+                    <p><a href="#!" class="footer-link">MDBootstrap</a></p>
+                    <p><a href="#!" class="footer-link">MDWordPress</a></p>
+                    <p><a href="#!" class="footer-link">BrandFlow</a></p>
+                    <p><a href="#!" class="footer-link">Bootstrap Angular</a></p>
                 </mdb-col>
                 <hr class="w-100 clearfix d-md-none" />
                 <mdb-col md="3" lg="2" xl="2" class="mx-auto mt-3">
                     <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-                    <p><a href="#!">Your Account</a></p>
-                    <p><a href="#!">Become an Affiliate</a></p>
-                    <p><a href="#!">Shipping Rates</a></p>
-                    <p><a href="#!">Help</a></p>
+                    <p><a href="#!" class="footer-link">Your Account</a></p>
+                    <p><a href="#!" class="footer-link">Become an Affiliate</a></p>
+                    <p><a href="#!" class="footer-link">Shipping Rates</a></p>
+                    <p><a href="#!" class="footer-link">Help</a></p>
                 </mdb-col>
                 <hr class="w-100 clearfix d-md-none" />
                 <mdb-col md="4" lg="3" xl="3" class="mx-auto mt-3">

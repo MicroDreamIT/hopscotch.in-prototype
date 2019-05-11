@@ -7,3 +7,12 @@
   .text-hop-grey{
     color:$hop-gray !important;
   }
+  .btn-default{
+    background: $primary!important;
+  }
+  .btn-default:not([disabled]):not(.disabled):active{
+    background:  $primary-active !important;
+  }
+  .btn{
+    font-size: 12px!important;
+  }

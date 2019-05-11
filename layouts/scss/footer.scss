@@ -1,0 +1,9 @@
+.site-footer{
+  background: $primary-light !important;
+  .footer-link {
+        color: $cream;
+        &:hover{
+          color:$white;
+        }
+  }
+}
