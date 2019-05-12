@@ -1,21 +1,24 @@
 <template>
     <div>
-        <carousel>
-            <slide>
-                Slide 1 Content
-            </slide>
-            <slide>
-                Slide 2 Content
-            </slide>
-        </carousel>
+        <slide-section></slide-section>
+        <facility-section></facility-section>
+        <product-slide></product-slide>
+        <support-content></support-content>
+
     </div>
 </template>
 <script>
-    import {Carousel, Slide} from 'vue-carousel'
+    import SlideSection from '~/components/front/sliderSection.vue'
+    import FacilitySection from '~/components/front/FacilitySection.vue'
+    import ProductSlide from '~/components/front/ProductSlide.vue'
+    import SupportContent from '~/components/front/SupportContent.vue'
     export default {
         name: "home2",
         components:{
-            Carousel, Slide
+            SlideSection,
+            ProductSlide,
+            SupportContent,
+            FacilitySection
         }
     }
 </script>
