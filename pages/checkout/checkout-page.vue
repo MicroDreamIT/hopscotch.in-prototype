@@ -26,7 +26,7 @@
 										</p>
 										<template>
 											<mdb-input  label="Your mobile number"/>
-											<mdb-btn color="pink" class="" block @click="maintainStep(1)"> CONTINUE</mdb-btn>
+											<mdb-btn  class="btn-primary" block @click="maintainStep(1)"> CONTINUE</mdb-btn>
 										</template>
 									</div>
 								</div>
@@ -70,7 +70,7 @@
 											<span class="link-account">
 										This email address will be linked to your account
 									</span>
-											<mdb-btn color="pink" class="" block @click="maintainStep(2)"> CONTINUE</mdb-btn>
+											<mdb-btn  class="btn-primary" block @click="maintainStep(2)"> CONTINUE</mdb-btn>
 										</div>
 									</div>
 							</div>
@@ -114,7 +114,7 @@
 												<mdb-input  label="CVV"></mdb-input>
 											</div>
 											<mdb-input  label="Name on card"></mdb-input>
-											<mdb-btn color="pink" class="" block > CONTINUE</mdb-btn>
+											<mdb-btn  class="btn-primary" block > CONTINUE</mdb-btn>
 										</div>
 										<div id="age" class="tabcontent">
 											<h5>Select a bank</h5><br>
@@ -217,7 +217,7 @@
 									</badger-accordion>
 									<div class="total"> Total <span class="ow-right">$ {{totalItemPrice[0]-totalItemPrice[1]}}</span></div>
 									<div class="proceed-button">
-										<mdb-btn color="pink" class="mt-lg-5 " block @click=" ">PAY 5,522</mdb-btn>
+										<mdb-btn  class="btn-primary mt-lg-5 " block @click=" ">PAY 5,522</mdb-btn>
 										<span class="secure"><mdb-icon  icon="lock" /> Secure checkout</span>
 									</div>
 								</div>

@@ -97,7 +97,7 @@
                              </div>
                              <div class="proceed-button">
                                  <nuxt-link to='/checkout/checkout-page'>
-                                     <mdb-btn color="pink" class="mt-lg-5 " block >Proceed to checkout</mdb-btn>
+                                     <mdb-btn class="mt-lg-5 btn-primary" block >Proceed to checkout</mdb-btn>
                                      <!--@click="proceedItem"-->
                                  </nuxt-link>
                              </div>
