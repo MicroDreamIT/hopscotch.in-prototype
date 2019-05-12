@@ -126,7 +126,7 @@
             font-size: 13px;
 
             .discount {
-                color: green;
+                color: $secondary;
                 font-weight: bold;
             }
         }
@@ -199,7 +199,7 @@
         padding: 8px 0!important;
         font-size: 12px;
         text-align: center;
-        background:  $Secondary;
+        background:  $secondary;
         color: #fff;
     }
 

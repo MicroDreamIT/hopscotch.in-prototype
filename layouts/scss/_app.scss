@@ -2,8 +2,7 @@
 @import "header";
 @import "footer";
 @import "_custom-variables.scss";
-@import "_boss.scss";
-//$primary: #ED54A4 !important;
+@import "products.scss";
   body {
     font-family: averta, sans-serif !important;
   }

@@ -1,3 +1,6 @@
-.filter-button{
-
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+  color: #fff;
+  border-color: $primary-active;
+  background-color: $primary-active;
+  box-shadow: none !important;
 }
