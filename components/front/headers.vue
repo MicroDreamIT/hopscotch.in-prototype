@@ -7,7 +7,7 @@
                 <mdb-navbar-toggler>
                     <mdb-navbar-nav>
                         <mdb-nav-item to="/" active>Home</mdb-nav-item>
-                        <mdb-nav-item to="home2">home2</mdb-nav-item>
+                        <mdb-nav-item to="/home2">home2</mdb-nav-item>
                         <mdb-nav-item :to="{name:'products'}">Products</mdb-nav-item>
                         <mdb-nav-item :to="{name:'account-order'}">Account</mdb-nav-item>
                         <mdb-nav-item :to="{name:'cart-cart-page'}">
