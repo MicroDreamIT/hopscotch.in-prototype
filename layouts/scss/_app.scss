@@ -13,6 +13,11 @@
    }
   }
 }
+
+.VueCarousel-pagination{
+  margin-top: -35px !important;
+}
+
 .nuxt-link-exact-active.nuxt-link-active{
   color:$primary-active;
 }

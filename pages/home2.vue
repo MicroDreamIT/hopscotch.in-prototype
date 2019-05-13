@@ -3,6 +3,8 @@
         <slide-section></slide-section>
         <br>
         <br>
+        <hr>
+        <br>
         <facility-section></facility-section>
         <product-slide></product-slide>
         <support-content></support-content>

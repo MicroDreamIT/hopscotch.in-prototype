@@ -11,7 +11,7 @@
             <p class="xl:pl-32 xl:pr-32">
                 See how some of our seriously stylish little customers are wearing their Hopscotch favourites.
             </p>
-            <mdb-btn color="pink dark" class="text-center">Shop new collections</mdb-btn>
+            <mdb-btn class="text-center">Shop new collections</mdb-btn>
         </div>
     </div>
 </template>
