@@ -34,20 +34,20 @@
 </template>
 <style scoped lang="scss">
     .nav-logo{
-        width: 112px;
-        line-height: 40px;
-        background: url(../../assets/images/hopscotch_typeface.svg) no-repeat,
-        url(../../assets/images/hop.svg) no-repeat;
+        /*width: 112px;*/
+        /*line-height: 40px;*/
+        /*background: url(../../assets/images/hopscotch_typeface.svg) no-repeat,*/
+        /*url(../../assets/images/hop.svg) no-repeat;*/
     }
     .nav-item{
-        font-size: 14px;
-        line-height: 16px;
-        padding: 22px 0 0;
-        font-weight: 400;
-        color: #fff;
+        /*font-size: 14px;*/
+        /*line-height: 16px;*/
+        /*padding: 22px 0 0;*/
+        /*font-weight: 400;*/
+        /*color: #fff;*/
     }
     .navbar{
-        padding-bottom: 5px;
-        box-shadow: 6px 3px 5px #00000026!important;
+        /*padding-bottom: 5px;*/
+        /*box-shadow: 6px 3px 5px #00000026!important;*/
     }
 </style>

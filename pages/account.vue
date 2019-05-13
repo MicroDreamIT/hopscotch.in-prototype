@@ -18,32 +18,32 @@
 
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <nuxt-link class="nav-link text-pink hover:text-pink-darker" href="#" to="order">
+                                <nuxt-link class="nav-link primary-theme-color hv" href="#" to="order">
                                     <mdb-icon icon="shopping-bag"  class="pr-3"/>Orders
                                 </nuxt-link>
                             </li>
                             <li class="nav-item">
-                                <nuxt-link class="nav-link text-pink hover:text-pink-darker" to="profile">
+                                <nuxt-link class="nav-link primary-theme-color hv" to="profile">
                                     <mdb-icon far icon="user-circle"  class="pr-3"/>Profile details
                                 </nuxt-link>
                             </li>
                             <li class="nav-item">
-                                <nuxt-link class="nav-link text-pink hover:text-pink-darker" to="moments">
+                                <nuxt-link class="nav-link primary-theme-color hv" to="moments">
                                     <mdb-icon fab icon="gratipay"  class="pr-3"/>My Moments
                                 </nuxt-link>
                             </li>
                             <li class="nav-item">
-                                <nuxt-link class="nav-link text-pink hover:text-pink-darker" href="#" to="cards">
+                                <nuxt-link class="nav-link primary-theme-color hv" href="#" to="cards">
                                     <mdb-icon fab icon="cc-mastercard"  class="pr-3"/>Saved Cards
                                 </nuxt-link>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-pink hover:text-pink-darker" href="#">
+                                <a class="nav-link primary-theme-color hv" href="#">
                                     <mdb-icon icon="hand-holding-usd"  class="pr-3"/>Credits $7896
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-pink hover:text-pink-darker" href="#">
+                                <a class="nav-link primary-theme-color hv" href="#">
                                     <mdb-icon icon="sign-out-alt"  class="pr-3"/>Sign Out
                                 </a>
                             </li>
@@ -64,9 +64,3 @@
         name: "account"
     }
 </script>
-
-<style scoped>
-    .nuxt-link-exact-active.nuxt-link-active{
-        color:#6f213f;
-    }
-</style>

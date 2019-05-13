@@ -11,19 +11,19 @@
                 </mdb-col>
                 <hr class="w-100 clearfix d-md-none" />
                 <mdb-col md="2" lg="2" xl="2" class="mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                    <p><a href="#!" class="footer-link">MDBootstrap</a></p>
-                    <p><a href="#!" class="footer-link">MDWordPress</a></p>
-                    <p><a href="#!" class="footer-link">BrandFlow</a></p>
-                    <p><a href="#!" class="footer-link">Bootstrap Angular</a></p>
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Information</h6>
+                    <p><a href="#!" class="footer-link">About Us</a></p>
+                    <p><a href="#!" class="footer-link">Delivery Information</a></p>
+                    <p><a href="#!" class="footer-link">Privacy Policy</a></p>
+                    <p><a href="#!" class="footer-link">Terms & Condition</a></p>
                 </mdb-col>
                 <hr class="w-100 clearfix d-md-none" />
                 <mdb-col md="3" lg="2" xl="2" class="mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Useful links</h6>
-                    <p><a href="#!" class="footer-link">Your Account</a></p>
-                    <p><a href="#!" class="footer-link">Become an Affiliate</a></p>
-                    <p><a href="#!" class="footer-link">Shipping Rates</a></p>
-                    <p><a href="#!" class="footer-link">Help</a></p>
+                    <h6 class="text-uppercase mb-4 font-weight-bold">My Account</h6>
+                    <p><a href="#!" class="footer-link">My Account</a></p>
+                    <p><a href="#!" class="footer-link">Login</a></p>
+                    <p><a href="#!" class="footer-link">My Cart</a></p>
+                    <p><a href="#!" class="footer-link">Wish List</a></p>
                 </mdb-col>
                 <hr class="w-100 clearfix d-md-none" />
                 <mdb-col md="4" lg="3" xl="3" class="mx-auto mt-3">

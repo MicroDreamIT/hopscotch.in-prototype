@@ -3,6 +3,20 @@
 @import "footer";
 @import "_custom-variables.scss";
 @import "products.scss";
+
+.primary-theme-color{
+  color: $primary;
+  &.hv{
+   &:hover{
+     color: $primary-active;
+
+   }
+  }
+}
+.nuxt-link-exact-active.nuxt-link-active{
+  color:$primary-active;
+}
+
   body {
     font-family: averta, sans-serif !important;
   }

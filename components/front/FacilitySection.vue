@@ -1,32 +1,39 @@
 <template>
     <mdb-container>
         <mdb-row>
-            <mdb-col col="4">
-                <div>
-                    <mdb-icon icon="truck" />
-                </div>
-                <div>
-                    <p>FREE SHIPPING & RETURN</p>
-                    <p>Free shipping on all orders over $99.</p>
-                </div>
+            <mdb-col md="4">
+
+               <div class="flex text-grey-darkest">
+                   <div>
+                       <mdb-icon icon="truck" class="text-5xl"/> &nbsp;
+                   </div>
+                   <div>
+                       <span>FREE SHIPPING & RETURN</span><br>
+                       <span>Free shipping on all orders over $99.</span>
+                   </div>
+               </div>
 
             </mdb-col>
-            <mdb-col col="4">
-                <div>
-                    <mdb-icon icon="truck" />
-                </div>
-                <div>
-                    <p>FREE SHIPPING & RETURN</p>
-                    <p>Free shipping on all orders over $99.</p>
+            <mdb-col md="4">
+                <div class="flex text-grey-darkest">
+                    <div>
+                        <mdb-icon icon="truck" class="text-5xl"/> &nbsp;
+                    </div>
+                    <div>
+                        <span>FREE SHIPPING & RETURN</span><br>
+                        <span>Free shipping on all orders over $99.</span>
+                    </div>
                 </div>
             </mdb-col>
-            <mdb-col col="4">
-                <div>
-                    <mdb-icon icon="truck" />
-                </div>
-                <div>
-                    <p>FREE SHIPPING & RETURN</p>
-                    <p>Free shipping on all orders over $99.</p>
+            <mdb-col md="4">
+                <div class="flex text-grey-darkest">
+                    <div>
+                        <mdb-icon icon="truck" class="text-5xl"/> &nbsp;
+                    </div>
+                    <div>
+                        <span>FREE SHIPPING & RETURN</span><br>
+                        <span>Free shipping on all orders over $99.</span>
+                    </div>
                 </div>
             </mdb-col>
         </mdb-row>
