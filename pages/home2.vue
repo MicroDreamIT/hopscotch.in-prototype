@@ -1,11 +1,8 @@
 <template>
     <div>
         <slide-section></slide-section>
-        <br>
-        <br>
-        <hr>
-        <br>
         <facility-section></facility-section>
+        <hot-categories></hot-categories>
         <product-slide></product-slide>
         <support-content></support-content>
 
@@ -16,13 +13,15 @@
     import FacilitySection from '~/components/front/FacilitySection.vue'
     import ProductSlide from '~/components/front/ProductSlide.vue'
     import SupportContent from '~/components/front/SupportContent.vue'
+    import hotCategories from '~/components/front/hotCategories.vue'
     export default {
         name: "home2",
         components:{
             SlideSection,
             ProductSlide,
             SupportContent,
-            FacilitySection
+            FacilitySection,
+            hotCategories,
         }
     }
 </script>

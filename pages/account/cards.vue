@@ -22,7 +22,7 @@
                         </div>
 
                         <div class="form-group">
-                            <mdb-btn color="pink" type="submit">Add card</mdb-btn>
+                            <mdb-btn type="submit">Add card</mdb-btn>
                         </div>
                     </form>
                 </div>

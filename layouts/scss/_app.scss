@@ -24,6 +24,15 @@
 
   body {
     font-family: averta, sans-serif !important;
+      &::-webkit-scrollbar{
+        background-color: #f5f5f5;
+        width: 7px;
+      }
+      &::-webkit-scrollbar-thumb{
+        border-radius: 50px;
+        background: linear-gradient(to right, #fff, #e4e4e4);
+        border: 1px solid #ccc;
+      }
   }
     .tabcontent.adjust{
         @media(max-width:425px){
