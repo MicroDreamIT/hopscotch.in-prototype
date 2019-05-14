@@ -2,7 +2,18 @@ import Vue from 'vue'
 Vue.use(require('vue-faker'))
 const fakerSize = ['0-3 months', '3-6 months', '6-12 months', '12-15 months', '15-20 months']
 const fakerSex = ['male', 'female', 'both']
-
+const imageLink = [
+    '/products/1.jpg',
+    '/products/2.jpg',
+    '/products/3.jpg',
+    '/products/4.jpg',
+    '/products/5.jpg',
+    '/products/6.jpg',
+    '/products/7.jpg',
+    '/products/8.jpg',
+    '/products/9.jpg',
+    '/products/10.jpg'
+]
 export const state = () => ({
     products:[],
 })
@@ -31,10 +42,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
                 ],
                 attributes:{
                     size:[
@@ -79,10 +90,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
                 ],
                 attributes:{
                     size:[
@@ -127,10 +138,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
                 ],
                 attributes:{
                     size:[
@@ -175,10 +186,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
                 ],
                 attributes:{
                     size:[
@@ -223,10 +234,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
                 ],
                 attributes:{
                     size:[
@@ -271,10 +282,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
                 ],
                 attributes:{
                     size:[
@@ -319,10 +330,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default: 0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default: 1},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default: 0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default: 0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default: 0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default: 1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default: 0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default: 0},
                 ],
                 attributes:{
                     size:[
@@ -367,10 +378,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
                 ],
                 attributes:{
                     size:[
@@ -415,10 +426,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
                 ],
                 attributes:{
                     size:[
@@ -463,10 +474,10 @@ export const actions = {
                 },
                 color:Vue.faker().commerce.color(),
                 images:[
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:0},
-                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().image.fashion(), default:1},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:0},
+                    {id:Vue.faker().random.uuid(), model:'Product', path:Vue.faker().random.arrayElement(imageLink), default:1},
                 ],
                 attributes:{
                     size:[
