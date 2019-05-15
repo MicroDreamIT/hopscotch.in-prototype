@@ -10,8 +10,7 @@
                             alt="Card image cap"
                     ></mdb-card-image>
                     <mdb-card-body>
-                        <mdb-card-title>Basic card</mdb-card-title>
-                        <mdb-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</mdb-card-text>
+                        <mdb-card-title>{{product.name}}</mdb-card-title>
                         <mdb-btn color="primary">Button</mdb-btn>
                     </mdb-card-body>
                 </mdb-card>
@@ -40,8 +39,7 @@
                         return value
                     }
                 })[0]
-
-                return '../../../static/images'+val.path
+                return '/images/'+val.path
             }
         }
     }

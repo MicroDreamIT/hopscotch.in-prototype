@@ -12,7 +12,7 @@
                     <div @mouseover="showItem('item'+index)"
                          @mouseleave="hideItem('item'+index)" v-if="item.hasOwnProperty('id') && item.id">
                         <nuxt-link :to="{name:'product-show', params:{show:item.id}}">
-                            <img src="../../../static/images/product-image2.PNG" alt="">
+                            <img :src="getDefaultValue(item.images)" alt="">
                             <!--<img :src="item.images[0].path" alt="Card image cap"/>-->
                         </nuxt-link>
 
@@ -87,6 +87,15 @@
             this.product = this.$store.state.products;
         },
         methods: {
+            getDefaultValue(arr){
+                let val =  arr.filter(value=>{
+                    if(value.default===1){
+
+                        return value
+                    }
+                })[0]
+                return '/images/'+val.path
+            },
             showItem(item) {
                 let itemElement = this.$refs[item][0].classList
                 itemElement.add('hover-item')
