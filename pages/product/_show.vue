@@ -13,31 +13,7 @@
                     <div class="product-slide">
 
                         <carousel :dots="false"  :navText = "['','']" >
-	                        <img src="../../static/images/sim-1.jpg">
-	                        <img src="../../static/images/product-image2.PNG">
-	                        <img src="../../static/images/sim-2.jpg">
-	                        <img src="../../static/images/sim-3.jpg">
-	                        <img src="../../static/images/sim-4.jpg">
-	                        <img src="../../static/images/sim-5.jpg">
-	                        <img src="../../static/images/sim-6.jpg">
-	                        <img src="../../static/images/sim-7.jpg">
-	                        <img src="../../static/images/sim-8.jpg">
-	                        <img src="../../static/images/sim-1.jpg">
-	                        <img src="../../static/images/sim-2.jpg">
-	                        <img src="../../static/images/sim-3.jpg">
-	                        <img src="../../static/images/sim-4.jpg">
-	                        <img src="../../static/images/sim-5.jpg">
-	                        <img src="../../static/images/sim-6.jpg">
-	                        <img src="../../static/images/sim-7.jpg">
-	                        <img src="../../static/images/sim-8.jpg">
-                            <img src="../../static/images/product-image2.PNG">
-                            <img src="../../static/images/product-image2.PNG">
-                            <img src="../../static/images/product-image2.PNG">
-                            <img src="../../static/images/product-image2.PNG">
-                            <img src="../../static/images/product-image2.PNG">
-                            <img src="../../static/images/product-image2.PNG">
-                            <img src="../../static/images/product-image2.PNG">
-                            <img src="../../static/images/product-image2.PNG">
+	                        <img :src="'/images/'+image.path" v-for="image in product.images">
                             <template slot="prev"></template>
                         </carousel>
                     </div>

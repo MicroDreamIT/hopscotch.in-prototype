@@ -40,6 +40,7 @@ export default {
       '~plugins/mdbv.js',
       '~plugins/accordions.js',
       '~plugins/others.js',
+      '~plugins/rootMethods.js'
   ],
 
   /*
