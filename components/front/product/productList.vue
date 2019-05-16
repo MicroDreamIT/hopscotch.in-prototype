@@ -36,17 +36,8 @@
                                         <span>View size chart</span>
                                     </div>
                                     <div class="d-flex flex-wrap pt-2">
-                                        <mdb-btn rounded class="customBtnProduct" @click="cart">
-                                            6-12 month
-                                        </mdb-btn>
-                                        <mdb-btn rounded class="customBtnProduct" @click="cart">
-                                            1-2 years
-                                        </mdb-btn>
-                                        <mdb-btn rounded class="customBtnProduct" @click="cart">
-                                            2-3 years
-                                        </mdb-btn>
-                                        <mdb-btn rounded class="customBtnProduct" @click="cart">
-                                            3-4 years
+                                        <mdb-btn rounded class="customBtnProduct" @click="cart" v-for="sz in item.attributes.size" :key="sz.id">
+                                            {{sz.name}}
                                         </mdb-btn>
                                     </div>
                                 </mdb-card-body>

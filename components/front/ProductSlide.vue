@@ -10,8 +10,23 @@
                             alt="Card image cap"
                     ></mdb-card-image>
                     <mdb-card-body>
-                        <mdb-card-title>{{product.name}}</mdb-card-title>
-                        <mdb-btn color="primary">Button</mdb-btn>
+                        <mdb-card-title class="text-lg">{{product.name | truncate}}</mdb-card-title>
+
+                        <div class="form-group">
+                            <select class="form-control" v-model="selectedSize">
+                                <option
+                                        v-for="size in product.attributes.size"
+                                        :key="size.id"
+                                        :value="size"
+
+                                >
+                                    {{size.name}}
+                                </option>
+                            </select>
+
+                            <mdb-btn class="mt-3 add-to-cart" block>ADD TO CART</mdb-btn>
+                        </div>
+
                     </mdb-card-body>
                 </mdb-card>
             </slide>
@@ -23,6 +38,11 @@
     import {Carousel, Slide} from 'vue-carousel'
     export default {
         name: "ProductSection",
+        data(){
+            return {
+                selectedSize:{}
+            }
+        },
         components:{
             Carousel, Slide
         },

@@ -115,73 +115,11 @@
                         <!--:responsive="{0:{items:1,nav:false},600:{items:3,nav:true}}-->
                         <div class="show-bottom-slider">
                             <carousel class="modify" :dots="false" :autoWidth="true" :navText = "['','']">
-                                <div>
-                                    <img src="../../static/images/product-image2.PNG" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-1.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-2.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-3.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-4.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-5.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-6.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-7.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-8.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-1.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-2.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-3.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-4.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-5.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-6.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-7.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
-                                </div>
-                                <div>
-                                    <img src="../../static/images/sim-8.jpg" alt="" class="img-fluid">
-                                    <p class="mt-2">₹584</p>
+                                <div v-for="pr in products" :key="pr.id">
+                                    <nuxt-link :to="{name:'product-show', params:{show:pr.id}}" @click.prevent>
+                                        <img :src="getDefaultValue(pr.images)" alt="" class="img-fluid">
+                                        <p class="mt-2">₹584</p>
+                                    </nuxt-link>
                                 </div>
                             </carousel>
                         </div>
@@ -213,7 +151,8 @@
         data() {
             return {
                 product: {},
-                selectedSize: {}
+                selectedSize: {},
+                products:[]
             }
         },
 
@@ -221,6 +160,7 @@
             if (!this.$store.state.products.length) {
                 this.$store.dispatch('getProducts')
             }
+            this.products = this.$store.state.products
             this.product = this.$store.state.products[0]
             this.selectedSize = this.getDefaultSize(this.product.attributes.size)
 
@@ -248,6 +188,15 @@
         methods: {
             getDefaultSize(size) {
                 return size.filter(val => val.default)[0]
+            },
+            getDefaultValue(arr){
+                let val =  arr.filter(value=>{
+                    if(value.default===1){
+
+                        return value
+                    }
+                })[0]
+                return '/images/'+val.path
             },
         }
     }
