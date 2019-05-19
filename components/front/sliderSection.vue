@@ -1,6 +1,5 @@
 <template>
     <mdb-container>
-
         <carousel :perPage= '1' :autoplayTimeout="1000" paginationColor="#3D4852" paginationActiveColor="#1A75FF" paginationPosition="bottom-overlay" >
             <slide>
                 <img src="~assets/images/playingbaby.jpg" width="100%">
