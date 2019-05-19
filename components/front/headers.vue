@@ -10,6 +10,10 @@
                         <mdb-nav-item to="/" active>Home</mdb-nav-item>
                         <mdb-nav-item to="/home2">home2</mdb-nav-item>
                         <mdb-nav-item :to="{name:'products'}">Products</mdb-nav-item>
+                        <mdb-nav-item :to="{name:'account-order'}">Account</mdb-nav-item>
+                        <mdb-nav-item :to="{name:'product-show', params:{show:'winter-baby'}}">Product View</mdb-nav-item>
+                        <mdb-nav-item :to="{name:'cart-cart-page'}">Cart Page</mdb-nav-item>
+                        <mdb-nav-item to='/checkout/checkout-page'>checkout</mdb-nav-item>
                     </mdb-navbar-nav>
                     <mdb-navbar-nav right>
                         <mdb-nav-item :to="{name:'cart-cart-page'}">
