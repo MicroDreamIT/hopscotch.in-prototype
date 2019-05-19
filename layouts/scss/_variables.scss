@@ -1,14 +1,17 @@
-
-//theme - colors
-  $primary: rgb(26, 117, 255);
-  $primary-active:#2360dc ;
-  $primary-light:#2360dc ;
-  $secondary:#0d4fb3;
-  $warning:#F4C839;
-
 //Basic colors
 $white:#FFF;
 $cream:#d1dbea;
 $pink:#F85F89;
 $violet:#44476F;
 $light-yellow:#D9DD80;
+$blue: rgb(26, 117, 255);
+
+
+//theme - colors
+  $primary: $violet;
+  $primary-active:$violet;
+  $primary-light:$violet ;
+  $secondary:$violet;
+  $warning:#F4C839;
+
+
