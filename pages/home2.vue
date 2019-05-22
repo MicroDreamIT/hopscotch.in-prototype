@@ -5,7 +5,6 @@
         <hot-categories></hot-categories>
         <product-slide></product-slide>
         <support-content></support-content>
-
     </div>
 </template>
 <script>

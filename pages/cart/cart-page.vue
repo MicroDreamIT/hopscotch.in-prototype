@@ -16,7 +16,7 @@
                                      <span class="close-pin" @click="pinCodePopup=false">x</span>
                                      <pre>Enter a pincode</pre>
                                      <mdb-input box label="Promo Code"  />
-                                     <mdb-btn color="pink" class="" block > check</mdb-btn>
+                                     <mdb-btn block > check</mdb-btn>
                                  </template>
                              </div>
                          </div>

@@ -1,7 +1,5 @@
 <template>
-
     <mdb-container>
-
       <mdb-row class="mt-5">
        <mdb-col md="4">
            <nuxt-link to="/products">

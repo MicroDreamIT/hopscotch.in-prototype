@@ -120,52 +120,30 @@
 											<h5>Select a bank</h5><br>
 											<div class="banks-payments">
 												<div>
-													<input type="radio" id="hdfc" class="bank-select" value="hdfv" name="bank">
-													<label for="hdfc"class="bank-select-label" >
-														<img src="https://hopscotch.in/w/d63eb2906dd9bd9b5aebdaa8def67946.svg" width='35px'>
+													<input type="radio" id="hdfc" class="bank-select" value="hdfc" name="bank">
+													<label for="hdfc" class="bank-select-label" >
+														<img src="~assets/images/banks/d63eb2906dd9bd9b5aebdaa8def67946.svg" width='35px'>
 														HDFC
 													</label>
 												</div>
 												<div>
 													<input type="radio" id="sbi" class="bank-select" value="sbi" name="bank" >
 													<label for="sbi"class="bank-select-label">
-														<img src="https://hopscotch.in/w/c98f325bc043f5bb7893c21f7b49a7cd.svg" width='35px'>
+														<img src="~assets/images/banks/c98f325bc043f5bb7893c21f7b49a7cd.svg" width='35px'>
 														SBI
 													</label>
 												</div>
-												<div>
-													<input type="radio" id="icici" class="bank-select" value="icici" name="bank">
-													<label for="icici"class="bank-select-label">
-														<img src="https://hopscotch.in/w/901b03477fc7f695dcc71f348598b284.svg" width='35px'>
-														ICICI NetBanking
-													</label>
-												</div>
-												<div>
-													<input type="radio" id="axis" class="bank-select" value="axis" name="bank">
-													<label for="axis"class="bank-select-label">
-														<img src="https://hopscotch.in/w/69e2edc0b540bb9d813c8dec8b2da1e9.svg" width='35px'>
-														Axis Bank
-													</label>
-												</div>
-												<div>
-													<input type="radio" id="kotak" class="bank-select" value="kotak" name="bank">
-													<label for="kotak" class="bank-select-label">
-														<img src="https://hopscotch.in/w/20c240fd2b2cc165416e12c4b015cdbe.svg" width='25px'>
-														Kotak Mahindra Bank
-													</label>
-												</div>
-											
 											</div>
 											<div>
 												<mdb-select search  />
-												<mdb-btn color="pink" class="" block > PROCEED TO REVIEW </mdb-btn>
+												<mdb-btn block > PROCEED TO REVIEW </mdb-btn>
 											</div>
 										</div>
 										<div id="category" class="tabcontent adjust" >
 										<div class="cash">
 											<h5>Cash on delivery</h5>
 											<p>Verify your mobile number <span style="color:black;">+91 9652555455</span> to <br> pay with cash on delivery</p>
-											<mdb-btn color="pink" class="" block @click="maintainStep(3)"> SEND OTP </mdb-btn>
+											<mdb-btn  block @click="maintainStep(3)"> SEND OTP </mdb-btn>
 										</div>
 										</div>
 									</div>
