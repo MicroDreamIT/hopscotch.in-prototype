@@ -1,3 +1,10 @@
+# Prototype of Hopscotch.in
+This repository is an eCommerce template of a famous and popular website hopscotch.in
+This template is developed in Nuxt Js and single page application.
+I wish developer contributes to make it more perfect.
+
+For commercial development you can contact https://www.microdreamit.com
+
 # hopscotch
 
 > My super Nuxt.js project
